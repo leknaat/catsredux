@@ -1,7 +1,7 @@
 import React from 'react'
-import Cats from './cats'
+import CurrentCat from './currentcat'
 
 export default (props) =>
   <div>
-    <Cats giveRandomCat={() => props.randomCat()} currentCat={props.currentCat} />
+    <CurrentCat giveRandomCat={() => props.giveRandomCat()} currentCat={props.currentCat} />
   </div>

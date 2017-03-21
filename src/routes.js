@@ -3,7 +3,7 @@ import Route from './components/app/route'
 import Landing from './components/landing'
 import ReactTasks from './components/reactTasks'
 import ImportExportTasks from './components/importExportTasks'
-import Cats from './components/cats'
+import Cats from './containers/cats'
 
 export const routes = [
   { path: 'reactTasks', component: ReactTasks },
