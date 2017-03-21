@@ -1,10 +1,7 @@
 import React from 'react'
-import _ from 'lodash'
-import Cats from './cats'
+import CurrentCat from './currentcat'
 
 export default (props) =>
   <div>
-    {_.map(props.cats, (cats) => <Cats cats={cats} key={cats.id} />)}
-    <p>Please enjoy a random, locally and ethically sourced cat.</p>
-    <Button onClick={() => props.onTodoAdded()}></Button>
+    <CurrentCat giveRandomCat={() => props.giveRandomCat()} currentCat={props.currentCat} />
   </div>
